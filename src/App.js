@@ -4,6 +4,7 @@ import majors from './Data'
 import './App.css';
 
 import {Typography} from 'antd'
+
 const { Title, Paragraph, Text, Link } = Typography;
 
 function App() {

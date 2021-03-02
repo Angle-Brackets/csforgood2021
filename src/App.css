@@ -1,3 +1,4 @@
+
 .timeContent {
   text-align: center;
   display: flex;
@@ -34,6 +35,7 @@
   margin: 0 auto;
   padding-top: 10px;
 }
+
 
 .header{
   display: flex;
