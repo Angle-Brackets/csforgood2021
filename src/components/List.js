@@ -99,9 +99,9 @@ class List extends Component {
   console.log(this.state.sort)
 
     return(
-      <div style={{backgroundColor: "white", width: "90vw", marginLeft: "auto", marginRight: "auto", paddingTop:"1.5vw", paddingBottom: "1.5vw", marginTop: "2vw", borderRadius: "25px"}} className={"animated fadeIn"}>
+      <div style={{backgroundColor: "white", width: "90vw", height:"fit-content", marginLeft: "auto", marginRight: "auto", paddingTop:"1.5vw", paddingBottom: "1.5vw", marginTop: "2vw", borderRadius: "25px", overflow: "scroll"}} className={"animated fadeIn"}>
 
-      
+
       <input style={inputCSS} value={this.state.searchTerm} type="text" placeholder="Enter Major" onChange={this.search}/>
       <text style={{fontSize: "2rem", fontWeight: "bold", justifyContent: "center"}}>Major List</text>
 

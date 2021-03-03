@@ -9,32 +9,35 @@ const { Title, Paragraph, Text, Link } = Typography;
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <SiteHeader/>
-      <Typography style={{textAlign: "center", color: "white"}} className={"animated fadeIn"}>
-        <Title>
-          Majors Ranked is a website aimed to help students learn about the variety of majors offered in college.
-        </Title>
+      <div style={{height:"100vh", overflow: "scroll"}}>
+        <div style={{height: "6vh"}}></div>
+        
+        <Typography style={{textAlign: "center", color: "white"}} className={"animated fadeIn"}>
+          <Title>
+            Majors Ranked is a website aimed to help students learn about the variety of majors offered in college.
+          </Title>
 
-        <Paragraph>
-          Deciding a major is hard for many students, and we wish to offer a solution to make the process easy and simple to understand. 
-        </Paragraph>
+          <Paragraph>
+            Deciding a major is hard for many students, and we wish to offer a solution to make the process easy and simple to understand.
+          </Paragraph>
 
-        <Paragraph>
-          Use the Search Below to find information on the collection of {majors.length} majors we have currently.
-        </Paragraph>
+          <Paragraph>
+            Use the Search Below to find information on the collection of {majors.length} majors we have currently.
+          </Paragraph>
 
-        <Paragraph>
-          Brought to you by Ankit Joju and Joshua Galvez.
-        </Paragraph>
-
-      
-      </Typography>
-
-
+          <Paragraph>
+            Brought to you by Ankit Joju and Joshua Galvez.
+          </Paragraph>
 
 
-      <List/>
+        </Typography>
+
+        <List/>
+
+        <div style={{height: "6vh"}}></div>
+      </div>
     </div>
   );
 }
