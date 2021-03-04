@@ -45,22 +45,28 @@ export default class Major extends Component {
 
     return(
       <>
-          <tr className="entry" onClick={() => this.expand()}>
-           <td></td>
-           <td style={{color:"#3db6ff", paddingTop:"0.5%", paddingBottom:"0.5%"}}>{this.state.name}</td>
+          <tr className="entry" onClick={() => this.expand()} style={{display: `${this.state.show ? ("none") : ("revert")}`}}>
+           <td> </td>
+           <td style={{color:"#3db6ff", paddingTop:"0.5%", paddingBottom:"0.5%", fontSize: "0.7em", fontWeight: "bold"}}>{this.state.name.toUpperCase()}</td>
            <td>{this.state.rank}</td>
            <td>${this.state.salary.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</td>
           </tr>
-          <tr id="info" className="entryInfo" style={{display: `${this.state.show ? ("contents") : ("none")}`}}>
-            <td></td>
-            <td colspan="3" style={{paddingTop:"0.5%", paddingBottom:"0.5%"}}>
-              <div style={{color: "black", fontWeight:"bold", fontSize:"1.5vh"}}>DESCRIPTION</div>
-              <div>{this.state.desc}</div>
-              <div style={{color: "black", fontWeight:"bold", fontSize:"1.5vh"}}>JOBS</div>
-              <div>
-              {this.state.jobs.map(job =>
-                <div>{job}</div>
+          <tr id="info" className="entryInfo" style={{display: `${this.state.show ? ("table-row") : ("none")}`}} onClick={() => this.expand()}>
+            <td style={{ background: "#6565650a"}}></td>
+            <td colSpan="3" style={{paddingTop:"0.5%", paddingBottom:"0.5%", background: "#6565650a"}}>
+              <div style={{color: "#3db6ff", fontWeight:"bold", fontSize:"0.7em"}}>{this.state.name.toUpperCase()}</div>
+              <div style={{fontSize:"0.9em"}}>{this.state.desc}</div>
+              <div style={{display: "flex", alignItems: "center", fontWeight:"bold", fontSize:"2vh", color: "#f845a7", whiteSpace: "pre"}}>
+              <span style={{color: "black", fontSize:"1.5vh"}}>JOBS   </span>
+              {this.state.jobs.map((job, i) =>
+                <>job{(i < this.state.jobs.length - 1) ? <>, </> : <></>}</>
               )}
+              </div>
+              <div style={{display: "flex", alignItems: "center", fontWeight:"bold", fontSize:"2vh", color: "#f845a7", whiteSpace: "pre"}}>
+                <span style={{color: "black", fontSize:"1.5vh"}}>RANK   </span> {this.state.rank}
+              </div>
+              <div style={{display: "flex", alignItems: "center", fontWeight:"bold", fontSize:"2vh", color: "#f845a7", whiteSpace: "pre"}}>
+                <span style={{color: "black", fontSize:"1.5vh"}}>ESTIMATED INCOME   </span> ${this.state.salary.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
               </div>
               </td>
           </tr>
