@@ -59,7 +59,7 @@ export default class Major extends Component {
               <div style={{display: "flex", alignItems: "center", fontWeight:"bold", fontSize:"2vh", color: "#f845a7", whiteSpace: "pre"}}>
               <span style={{color: "black", fontSize:"1.5vh"}}>JOBS   </span>
               {this.state.jobs.map((job, i) =>
-                <>job{(i < this.state.jobs.length - 1) ? <>, </> : <></>}</>
+                <>{job}{(i < this.state.jobs.length - 1) ? <>, </> : <></>}</>
               )}
               </div>
               <div style={{display: "flex", alignItems: "center", fontWeight:"bold", fontSize:"2vh", color: "#f845a7", whiteSpace: "pre"}}>

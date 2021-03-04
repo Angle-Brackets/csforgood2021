@@ -118,7 +118,6 @@ class List extends Component {
     borderRadius:"0",
     color: "gray",
   };
-
     return(
       <div style={{marginLeft: "auto", marginRight: "auto", width:"fit-content", marginTop: "2vw"}}>
       <div style={{boxShadow:"-5px 3px 0px #00000036", padding:"0.5vh 1vw 0.5vh 1vw", borderRadius: "10px 10px 0 0", background: "white", marginLeft: "auto", width: "fit-content"}}>
