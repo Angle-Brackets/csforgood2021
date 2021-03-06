@@ -57,7 +57,7 @@ export default class Major extends Component {
               <div style={{color: "#3db6ff", fontWeight:"bold", fontSize:"0.7em"}}>{this.state.name.toUpperCase()}</div>
               <div style={{fontSize:"0.9em"}}>{this.state.desc}</div>
               <div style={{display: "flex", alignItems: "center", fontWeight:"bold", fontSize:"2vh", color: "#f845a7", whiteSpace: "pre"}}>
-              <span style={{color: "black", fontSize:"1.5vh"}}>JOBS   </span>
+              <span style={{color: "black", fontSize:"1.5vh"}}>POTENTIAL JOBS   </span>
               {this.state.jobs.map((job, i) =>
                 <>{job}{(i < this.state.jobs.length - 1) ? <>, </> : <></>}</>
               )}

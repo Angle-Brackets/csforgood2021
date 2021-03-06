@@ -19,7 +19,7 @@ const Infobox = () => {
           description:
             <Typography>
               <Paragraph>
-              This application was brought to you by Ankit Joju and Joshua Galvez for the 2021 CSForGood Competition. We hope to provide a solution in our local community and school for students that are unsure on their future career path and find difficulty in finding accurate information with so many conflicting sources.
+              This application was brought to you by Ankit Joju and Joshua Galvez for the 2021 CSForGood Competition. We hope to provide a solution in our local community and school for students that are unsure on their future career path and find difficulty in finding accurate information with so many conflicting sources. This website can be used on a desktop, or as a PWA (Progressive Web App) on a smart phone or other mobile device, just click the action to add it to the homescreen to make it act like a PWA for a more mobile-friendly experience!
               </Paragraph>
               
               <Divider/>
